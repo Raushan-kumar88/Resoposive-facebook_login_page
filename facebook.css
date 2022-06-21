@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: rgb(212, 216, 216);
+}
+.container .title{
+    width: 50%;
+    float: left;
+    /* border: 1px solid black; */
+    height: 400px;
+    margin-top: 147px;
+}
+.container .title h1{
+    font-size: 100px;
+    /* letter-spacing: 4px; */
+    margin-left: 2%;
+    margin: 2% 3%;
+    color: #0066ff;
+}
+.container .title p{
+    font-size: 50px;
+    margin-left: 3%;
+}
+
+.container .facebook{
+    width: 48%;
+    height: 100vh;
+    /* border: 2px solid black; */
+    float: right;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+.container .facebook form{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+   /* width: 0%; */
+   height: 500px;
+   margin: 100px 3% 30% 10%;
+   /* border: 1px solid rgb(155, 155, 155); */
+   background: white;
+   box-shadow: opx 4px 5px whitesmoke,
+                -3px -4px 4px gray;
+                border-radius: 6px;
+
+}
+.container .facebook form hr{
+    margin: 10px 50px;
+}
+.container .facebook form p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0066ff;
+    margin: 20px;
+}
+.container .facebook form p a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.container .facebook form input{
+    width: 92%;
+    margin: 15px;
+    height: 60px;
+    padding: 4px 15px;
+    font-size: 20px;
+    /* border-color: gray; */
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.container .facebook form .input:focus{
+    border-color: #0066ff;
+}
+.container .facebook form #btn{
+    background-color:  #0066ff;
+    cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.container .facebook form #btn:hover{
+    background: #0099ff;
+}
+.container .facebook form #btn2{
+    background-color: #009900;
+    cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    width: 250px;
+    margin-top: 40px;
+    transition: all 0.5s ease;
+}
+.container .facebook form #btn2:hover{
+    background: hsl(120, 86%, 49%);
+}
+
+@media (max-width:720px){
+    body{
+        background: black;
+    }
+    .container{
+        background: black ;
+        display: inline-block;
+        /* display: block; */
+        align-items: center;
+        justify-content: center;
+        /* position: relative; */
+        color: white;
+        width: 100%;
+        height: 100vh;
+        
+        
+    }
+    .container .title{
+        margin: 0px 10px;
+        /* margin: none; */
+        display: inline-block;
+        /* background: blueviolet; */
+        width: 120%;
+        /* position: absolute; */
+    }
+    .container .title h1{
+        font-size: 80px;
+        /* text-align: center; */
+        margin-bottom: 20px;
+        margin-top: ;
+    }
+    .container .title p{
+        font-size: 35px;
+        margin-left: 10px;
+        font-style: italic;
+        
+    }
+    .container .facebook{
+        width: 100%;
+        /* margin-top: 40px; */
+        /* margin-left: 30px; */
+        /* background: yellow; */
+        height: 400px;
+        /* position: absolute; */
+        margin-top: -40px;
+    }
+    .container .facebook form{
+        width: 100%;
+        margin-top: -80px;
+        background-color: black;
+        color: white;
+    }
+}
